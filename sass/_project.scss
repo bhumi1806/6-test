@@ -13,14 +13,23 @@
     }
 
     &__progress{
-        display: flex;
-        justify-content: space-between;
-        margin: 3rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2.5rem;
+        margin: 2rem 0;
     }
 
     &__content{
         box-sizing: border-box;
-        background-color: #f0884e;
+        background-color: #fcbda3;
+        border-radius: 10px;
+        padding: 3rem 2rem;
+    }
+
+    &__content1{
+        box-sizing: border-box;
+        background-color: #fce5bc;
         border-radius: 10px;
         padding: 3rem 2rem;
     }
@@ -31,7 +40,7 @@
         align-items: center;
     }
 
-    &_people{
+    &__people{
         display: flex;
     }
 
@@ -40,6 +49,7 @@
         width: 3rem;
         border-radius: 50%;
         margin-left: -1rem;
+        border: #fff;
     }
     
     &__loader{
@@ -48,12 +58,31 @@
         border-radius: 50%;
         height: 3rem;
         width: 3rem;
+        margin-left: -1rem;
     }
     
     &__number{
-        font-size: 1rem;
+        font-size: 1.4rem;
         color: #fff;
         text-align: center;
+        padding-top: 0.6rem;
+    }
+
+    &__loader1{
+        border: 1.5px solid #000;
+        background-color: #fce5bc;
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        margin-left: -1rem;
+        z-index: 1;
+    }
+    
+    &__number1{
+        font-size: 1.4rem;
+        color: #000;
+        text-align: center;
+        padding-top: 0.6rem;
     }
 
     &__icon{
@@ -67,7 +96,6 @@
         flex-direction: column;
         padding-top: 3rem;
         padding-bottom: 3rem;
-        padding-right: 4rem;
     }
 
     &__sold{
@@ -75,6 +103,35 @@
         font-size: 1rem;
         font-family: sans-serif;
         padding-top: 1rem;
+    }
+
+    &__sold1{
+        color: #000;
+        font-size: 1rem;
+        font-family: sans-serif;
+        padding-top: 3rem;
+
+    }
+
+    &__meter{
+        height: 0.4rem;
+        position: relative;
+        background-color: #e5e5e5;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+    }
+    
+    &__meter span {
+        display: block;
+        border-radius: 10px;
+        border: none;
+        height: 100%;
+    }
+
+    &__count{
+        background-color: #000;
     }
 }
 
@@ -132,5 +189,67 @@
         height: 2rem;
         width: 2rem;
         color: #ccc;
+    }
+}
+
+.reminder{
+    box-sizing: border-box;
+    border: 1px solid #dad4cb;
+    border-radius: 20px;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    &__text{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    &__btn{
+        display: block;
+        text-decoration: none;
+        font-size: 1rem;
+        border: 1px dashed #fcbda3;
+        border-radius: 100px;
+        padding: 1.5rem 3rem;
+        margin: 1rem;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__more{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    &__dot{
+        display: flex;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: rgba(252,189,163,0.5);
+        border-radius: 100%;
+        position: relative;
+
+        &::before,
+        &::after{
+            content: "";
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 100%;
+            position: absolute;
+            display: block;
+        }
+
+        &::before{
+            background-color: rgba(252,189,163,0.2);
+            right: -1rem;
+        }
+
+        &::after{
+            background-color: #fcbda3;
+            left: -1rem;
+        }
     }
 }

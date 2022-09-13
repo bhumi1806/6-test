@@ -1,3 +1,73 @@
 .member{
-    background-color: grey;
-}
+    padding: 2.5rem 3rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+
+    &__more{
+        display: flex;
+        justify-content: end;
+
+        &-icon{
+            color: #fcbda3;
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn{
+        background-color: #f0884e;
+        border: none;
+        border-radius: 100px;
+        padding: 1.4rem 2.5rem;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    &__content{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    &__not-icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        color: #000;
+    }
+
+    &__img{
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__sold{
+        color: #000;
+        font-size: 1rem;
+    }
+
+    &__down{
+        border: 1px solid #fcbda3;
+        background-color: rgba(252,189,163,0.3);
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+
+        &-icon{
+            height: 1rem;
+            width: 1rem;
+            color: #000;
+        }
+    }
+    
+}   

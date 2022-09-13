@@ -104,6 +104,9 @@
                         <div class="project__people">
                             <img src="img/user1.jpg" alt="User 1" class="project__img">
                             <img src="img/user2.jpg" alt="User 2" class="project__img">
+                            <div class="project__loader">
+                                <h1 class="project__number">+3</h1>
+                            </div>
                         </div>
                         <ion-icon name="ellipsis-vertical" class="project__icon"></ion-icon>
                     </div>
@@ -111,15 +114,21 @@
                         <h1 class="heading-1">Design system</h1>
                         <p class="project__sold">Deadline: 18 October</p>
                     </div>
+                    <p class="project__sold1">84 hours / 40%</p>
+                    <div class="project__meter">
+                        <span style="width:40%">
+                            <span class="project__count"></span>
+                        </span>
+                    </div>
                 </div>
 
-                <div class="project__content">
+                <div class="project__content1">
                     <div class="project__user">
                         <div class="project__people">
                             <img src="img/user1.jpg" alt="User 1" class="project__img">
                             <img src="img/user2.jpg" alt="User 2" class="project__img">
-                            <div class="project__loader">
-                                <h1 class="project__number">+3</h1>
+                            <div class="project__loader1">
+                                <h1 class="project__number1">+2</h1>
                             </div>
                         </div>
                         <ion-icon name="ellipsis-vertical" class="project__icon"></ion-icon>
@@ -128,11 +137,47 @@
                         <h1 class="heading-1">Make unique page for customer</h1>
                         <p class="project__sold">Deadline: 30 October</p>
                     </div>
+                    <p class="project__sold">108 hours / 75%</p>
+                    <div class="project__meter">
+                        <span style="width:75%">
+                            <span class="project__count"></span>
+                        </span>
+                    </div>
                 </div>
             </div>
+            <h2 class="heading-2">Reminders</h2>
+            <div class="reminder">
+                <div class="reminder__text">
+                    <div class="reminder__box">
+                        <p class="project__sold">Tomorrow, 16:00-18:00</p>
+                        <h2 class="heading-2">Discussion of the interm result of the project</h2>
+                    </div>
+                    <a href="#" class="reminder__btn">Set reminder</a>
+                </div>
+                <div class="reminder__more">
+                    <span class="reminder__dot"></span>
+                </div>
+            </div>
+
         </div>
         <div class="member">
-            Member
+            <div class="member__more">
+                <a href="#"><ion-icon name="ellipsis-horizontal" class="member__more-icon"></ion-icon></a>
+            </div>
+            <div class="member__header">
+                <button class="member__btn">Add project</button>
+                <div class="member__content">
+                    <a href="#"><ion-icon name="notifications-outline" class="member__not-icon"></ion-icon></a>
+                    <img src="img/user3.jpg" alt="Member" class="member__img">
+                    <div class="member__text">
+                        <p class="member__sold">User</p>
+                        <h3 class="heading-3">Maria</h3>
+                    </div>
+                    <button class="member__down">
+                        <ion-icon name="chevron-down-outline" class="member__down-icon"></ion-icon>
+                    </button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
