@@ -1,0 +1,53 @@
+.sidebar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &__menu{
+        border: none;
+        background-color: #fff;
+        // height: 6rem;
+        width: 7rem;
+        align-self: center;
+        padding-top: 1.1rem;
+        border-bottom: 1px solid grey;
+    }
+
+    &__icon{
+        height: 3rem;
+        width: 3rem;
+        color: #2A2C28;
+        padding: 1rem ;
+
+        &:hover,
+        &:active{
+            background-color: #DDBEA8;
+            color: #000;
+        }
+    }
+    
+    &__link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__help{
+        display: flex;
+        align-self: center;
+    }
+
+    &__help-btn{
+        height: 4rem;
+        width: 4rem;
+        background-color: #000;
+        border: none;
+        border-radius: 50%;
+    }
+
+    &__help-icon{
+        color: #fff;
+        height: 2rem;
+        width: 2rem;
+    }
+}

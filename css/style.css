@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  color: #fff;
+  font-weight: 300; }
+
+.container {
+  display: grid;
+  grid-template-columns: 7rem 2fr 4fr 3fr; }
+
+.heading-1 {
+  font-size: 2rem;
+  color: #000;
+  font-family: sans-serif; }
+
+.heading-2 {
+  font-size: 1.7rem;
+  color: #000;
+  font-family: sans-serif; }
+
+.heading-3 {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: sans-serif; }
+
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  .sidebar__menu {
+    border: none;
+    background-color: #fff;
+    width: 7rem;
+    align-self: center;
+    padding-top: 1.1rem;
+    border-bottom: 1px solid grey; }
+  .sidebar__icon {
+    height: 3rem;
+    width: 3rem;
+    color: #2A2C28;
+    padding: 1rem; }
+    .sidebar__icon:hover, .sidebar__icon:active {
+      background-color: #DDBEA8;
+      color: #000; }
+  .sidebar__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .sidebar__help {
+    display: flex;
+    align-self: center; }
+  .sidebar__help-btn {
+    height: 4rem;
+    width: 4rem;
+    background-color: #000;
+    border: none;
+    border-radius: 50%; }
+  .sidebar__help-icon {
+    color: #fff;
+    height: 2rem;
+    width: 2rem; }
+
+.nav {
+  background-color: #DDBEA8; }
+  .nav__text {
+    border-bottom: 1px solid grey; }
+  .nav__heading {
+    padding: 2rem 2rem 1rem 2rem; }
+  .nav__sold {
+    color: #000;
+    font-size: 1rem;
+    font-family: sans-serif; }
+  .nav__content {
+    padding: 2rem 2rem; }
+  .nav__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+  .nav__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #000; }
+  .nav__item {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem; }
+  .nav__list {
+    list-style: none;
+    color: #000;
+    font-family: sans-serif;
+    margin: 1rem 0; }
+  .nav__list-cta {
+    font-weight: 700;
+    list-style: none;
+    color: #000;
+    font-family: sans-serif;
+    margin: 1rem 0; }
+
+.project {
+  padding: 3rem; }
+  .project__heading {
+    display: flex;
+    justify-content: space-between; }
+  .project__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f0884e; }
+  .project__progress {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0; }
+  .project__content {
+    box-sizing: border-box;
+    background-color: #f0884e;
+    border-radius: 10px;
+    padding: 3rem 2rem; }
+  .project__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .project_people {
+    display: flex; }
+  .project__img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-left: -1rem; }
+  .project__loader {
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem; }
+  .project__number {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center; }
+  .project__icon {
+    height: 2rem;
+    width: 2rem;
+    color: #000; }
+  .project__text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 4rem; }
+  .project__sold {
+    color: #000;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding-top: 1rem; }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem 3.5rem;
+    border-radius: 100px;
+    width: 98%;
+    transition: all .2s;
+    margin-left: -3rem; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: #fff; }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #ccc; }
+  .search__input:focus + .search__button {
+    background-color: #fff; }
+  .search__button {
+    border: none;
+    background-color: #fff; }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    color: #ccc; }
+
+.member {
+  background-color: grey; }
