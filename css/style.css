@@ -185,11 +185,11 @@ body {
     color: #000;
     font-size: 1rem;
     font-family: sans-serif;
-    padding-top: 3rem; }
+    padding-top: 3.2rem; }
   .project__meter {
     height: 0.4rem;
     position: relative;
-    background-color: #e5e5e5;
+    background-color: rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 10px;
     overflow: hidden;
@@ -210,8 +210,8 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 3rem; }
   .search__input {
-    font-family: inherit;
-    font-size: inherit;
+    font-family: sans-serif;
+    font-size: 1.2rem;
     color: inherit;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -300,7 +300,8 @@ body {
   .member__header {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 3.5rem; }
   .member__btn {
     background-color: #f0884e;
     border: none;
@@ -315,24 +316,158 @@ body {
   .member__not-icon {
     height: 2.5rem;
     width: 2.5rem;
-    color: #000; }
+    color: #000;
+    padding-right: 1rem;
+    position: relative; }
+    .member__not-icon::before {
+      content: "";
+      background-color: #ff0000;
+      height: 0.6rem;
+      width: 0.6rem;
+      position: absolute;
+      border-radius: 50%;
+      margin-left: 1.4rem;
+      margin-top: 0.2rem; }
   .member__img {
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%; }
   .member__text {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-right: 1rem; }
   .member__sold {
     color: #000;
     font-size: 1rem; }
   .member__down {
     border: 1px solid #fcbda3;
     background-color: rgba(252, 189, 163, 0.3);
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%; }
     .member__down-icon {
       height: 1rem;
       width: 1rem;
+      color: #f0884e; }
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem; }
+  .team__img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%; }
+  .team__name {
+    box-sizing: border-box;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: rgba(252, 189, 163, 0.3);
+    text-align: center; }
+    .team__name-text {
+      font-size: 1.5rem;
+      color: #f0884e;
+      padding-top: 1.5rem; }
+  .team__add {
+    border: 1.5px dashed #fcbda3;
+    background-color: rgba(252, 189, 163, 0.3);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%; }
+    .team__add-icon {
+      height: 1.8rem;
+      width: 1.8rem;
+      color: #f0884e; }
+
+.progress {
+  box-sizing: border-box;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 2.5rem 1.8rem;
+  margin-top: 3rem; }
+  .progress__time {
+    display: flex;
+    justify-content: space-between; }
+  .progress__sold {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #000;
+    padding-bottom: 0.8rem; }
+  .progress__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem; }
+
+.task {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0; }
+  .task__add {
+    background-color: #DDBEA8;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    height: 11rem; }
+  .task__sold {
+    font-size: 1.6rem;
+    color: #000;
+    font-family: sans-serif; }
+    .task__sold-text {
+      font-size: 1rem;
+      color: #000;
+      font-family: sans-serif; }
+  .task__btn {
+    border: none;
+    background: none;
+    float: right;
+    margin-top: 2rem; }
+    .task__btn-icon {
+      height: 1.6rem;
+      width: 1.6rem;
       color: #000; }
+  .task__header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    align-items: center; }
+  .task__add-1 {
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1.4rem;
+    height: 11rem; }
+  .task__add-2 {
+    background-color: #f0884e;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1.4rem;
+    height: 11rem; }
+  .task__dot, .task__dot-1, .task__dot-2 {
+    height: 0.6rem;
+    width: 0.6rem;
+    display: inline-block;
+    background-color: #f0884e;
+    box-sizing: border-box;
+    border-radius: 50%; }
+    .task__dot-1, .task__dot-1-1, .task__dot-2-1 {
+      background-color: #00cbb3; }
+    .task__dot-2, .task__dot-1-2, .task__dot-2-2 {
+      background-color: #fff; }
+  .task__box, .task__box-1 {
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid #fce5bc;
+    border-radius: 3px; }
+    .task__box-1, .task__box-1-1 {
+      border: none;
+      background-color: #000; }
+  .task__p1 {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    color: #000;
+    margin-right: 1rem;
+    margin-top: 1rem; }

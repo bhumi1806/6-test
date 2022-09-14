@@ -17,6 +17,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 3.5rem;
     }
 
     &__btn{
@@ -38,6 +39,19 @@
         height: 2.5rem;
         width: 2.5rem;
         color: #000;
+        padding-right: 1rem;
+        position: relative;
+
+        &::before{
+            content: "";
+            background-color: #ff0000;
+            height: 0.6rem;
+            width: 0.6rem;
+            position: absolute;
+            border-radius: 50%;
+            margin-left: 1.4rem;
+            margin-top: 0.2rem;
+        }
     }
 
     &__img{
@@ -49,6 +63,7 @@
     &__text{
         display: flex;
         flex-direction: column;
+        padding-right: 1rem;
     }
 
     &__sold{
@@ -59,15 +74,185 @@
     &__down{
         border: 1px solid #fcbda3;
         background-color: rgba(252,189,163,0.3);
-        height: 2rem;
-        width: 2rem;
+        height: 2.5rem;
+        width: 2.5rem;
         border-radius: 50%;
 
         &-icon{
             height: 1rem;
             width: 1rem;
+            color: #f0884e;
+        }
+    }
+}
+
+.team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+
+    &__img{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+    &__name{
+        box-sizing: border-box;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color: rgba(252,189,163,0.3);
+        text-align: center;
+
+        &-text{
+            font-size: 1.5rem;
+            color: #f0884e;
+            padding-top: 1.5rem;
+        }
+    }
+
+    &__add{
+        border: 1.5px dashed #fcbda3;
+        background-color: rgba(252,189,163,0.3);
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+
+        &-icon{
+            height: 1.8rem;
+            width: 1.8rem;
+            color: #f0884e;
+        }
+    }
+}
+.progress{
+    box-sizing: border-box;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 2.5rem 1.8rem;
+    margin-top: 3rem;
+
+    &__time{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__sold{
+        font-size: 1rem;
+        font-family: sans-serif;
+        color: #000;
+        padding-bottom: 0.8rem;
+    }
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+}
+
+.task{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+
+    &__add{
+        background-color: #DDBEA8;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        padding: 3rem 2rem;
+        height: 11rem;
+    }
+
+    &__sold{
+        font-size: 1.6rem;
+        color: #000;
+        font-family: sans-serif;
+
+        &-text{
+            font-size: 1rem;
+            color: #000;
+            font-family: sans-serif;
+        }
+    }
+
+    &__btn{
+        border: none;
+        background: none;
+        float: right;
+        margin-top: 2rem;
+
+        &-icon{
+            height: 1.6rem;
+            width: 1.6rem;
             color: #000;
         }
     }
-    
-}   
+
+    &__header{
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.6rem;
+        align-items: center;
+    }
+
+    &__add-1{
+        background-color: #fff;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        padding: 1.4rem;
+        height: 11rem;
+    }
+
+    &__add-2{
+        background-color: #f0884e;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        padding: 1.4rem;
+        height: 11rem;
+    }
+
+    &__dot,
+    &__dot-1,
+    &__dot-2{
+        height: 0.6rem;
+        width: 0.6rem;
+        display: inline-block;
+        background-color: #f0884e;
+        box-sizing: border-box;
+        border-radius: 50%;
+
+        &-1{
+            background-color: #00cbb3;
+        }
+
+        &-2{
+            background-color: #fff;
+        }
+    }
+
+    &__box,
+    &__box-1{
+        height: 1rem;
+        width: 1rem;
+        border: 1px solid #fce5bc;
+        border-radius: 3px;
+
+        &-1{
+            border: none;
+            background-color: #000;
+        }
+    }
+
+    &__p1{
+        font-size: 1.4rem;
+        font-family: sans-serif;
+        color: #000;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+}
