@@ -3,14 +3,30 @@
     justify-content: space-between;
     flex-direction: column;
 
+    @media only screen and(max-width: $bp-medium){
+        grid-row: 1 / -1;
+    }
+
+    @media only screen and(max-width: $bp-small){
+        display: flex;
+        flex-direction: row;
+    }
+
     &__menu{
         border: none;
         background-color: #fff;
-        // height: 6rem;
         width: 7rem;
         align-self: center;
         padding-top: 1.1rem;
         border-bottom: 1px solid grey;
+
+        @media only screen and(max-width: $bp-large){
+            border: none;
+        } 
+
+        @media only screen and(max-width: $bp-medium){
+            border: none;
+        }
     }
 
     &__icon{
@@ -30,6 +46,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media only screen and(max-width: $bp-small){
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     &__help{

@@ -2,6 +2,14 @@
     padding: 2.5rem 3rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
 
+    @media only screen and(max-width: $bp-medium){
+        grid-column: 2 / span 1;
+    }
+
+    @media only screen and(max-width: $bp-medium){
+        box-shadow: none;
+    }
+
     &__more{
         display: flex;
         justify-content: end;
@@ -27,6 +35,11 @@
         padding: 1.4rem 2.5rem;
         font-size: 1.2rem;
         color: #fff;
+
+        &:hover,
+        &:active{
+            background-color: rgba(240,136,78,0.8);
+        }
     }
 
     &__content{
