@@ -25,11 +25,12 @@ body {
       grid-template-columns: 7rem 4fr 3fr; } }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-columns: 12rem 1fr;
+      grid-template-columns: 10rem 1fr;
       grid-template-rows: 1fr 1fr; } }
   @media only screen and (max-width: 37.5em) {
     .container {
-      display: inline-block; } }
+      display: inline-block;
+      width: 100%; } }
 
 .heading-1 {
   font-size: 2rem;
@@ -155,7 +156,7 @@ body {
     grid-template-rows: 1fr;
     gap: 2.5rem;
     margin: 2rem 0; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31em) {
       .project__progress {
         grid-template-columns: 1fr; } }
   .project__content {
@@ -163,11 +164,17 @@ body {
     background-color: #fcbda3;
     border-radius: 10px;
     padding: 3rem 2rem; }
+    @media only screen and (max-width: 31em) {
+      .project__content {
+        padding: 4rem 3rem; } }
   .project__content1 {
     box-sizing: border-box;
     background-color: #fce5bc;
     border-radius: 10px;
     padding: 3rem 2rem; }
+    @media only screen and (max-width: 31em) {
+      .project__content1 {
+        padding: 4rem 3rem; } }
   .project__user {
     display: flex;
     justify-content: space-between;
@@ -179,6 +186,10 @@ body {
     width: 3rem;
     border-radius: 50%;
     margin-left: -1rem; }
+    @media only screen and (max-width: 31em) {
+      .project__img {
+        height: 4rem;
+        width: 4rem; } }
   .project__loader {
     background-color: #000;
     border: none;
@@ -186,11 +197,19 @@ body {
     height: 3rem;
     width: 3rem;
     margin-left: -1rem; }
+    @media only screen and (max-width: 31em) {
+      .project__loader {
+        height: 4rem;
+        width: 4rem; } }
   .project__number {
     font-size: 1.4rem;
     color: #fff;
     text-align: center;
     padding-top: 0.6rem; }
+    @media only screen and (max-width: 31em) {
+      .project__number {
+        font-size: 1.6rem;
+        padding-top: 0.8rem; } }
   .project__loader1 {
     border: 1.5px solid #000;
     background-color: #fce5bc;
@@ -199,11 +218,19 @@ body {
     width: 3rem;
     margin-left: -1rem;
     z-index: 1; }
+    @media only screen and (max-width: 31em) {
+      .project__loader1 {
+        height: 4rem;
+        width: 4rem; } }
   .project__number1 {
     font-size: 1.4rem;
     color: #000;
     text-align: center;
     padding-top: 0.6rem; }
+    @media only screen and (max-width: 31em) {
+      .project__number1 {
+        font-size: 1.6rem;
+        padding-top: 0.8rem; } }
   .project__icon {
     height: 2rem;
     width: 2rem;
@@ -344,6 +371,10 @@ body {
       color: #fcbda3;
       height: 3rem;
       width: 3rem; }
+      @media only screen and (max-width: 31em) {
+        .member__more-icon {
+          height: 4rem;
+          width: 4rem; } }
   .member__header {
     display: flex;
     justify-content: space-between;
@@ -358,6 +389,10 @@ body {
     color: #fff; }
     .member__btn:hover, .member__btn:active {
       background-color: rgba(240, 136, 78, 0.8); }
+    @media only screen and (max-width: 31em) {
+      .member__btn {
+        padding: 2rem 4rem;
+        font-size: 1.8rem; } }
   .member__content {
     display: flex;
     gap: 1rem;
@@ -377,10 +412,18 @@ body {
       border-radius: 50%;
       margin-left: 1.4rem;
       margin-top: 0.2rem; }
+    @media only screen and (max-width: 31em) {
+      .member__not-icon {
+        height: 3rem;
+        width: 3rem; } }
   .member__img {
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%; }
+    @media only screen and (max-width: 31em) {
+      .member__img {
+        height: 3rem;
+        width: 3rem; } }
   .member__text {
     display: flex;
     flex-direction: column;
@@ -398,16 +441,28 @@ body {
       height: 1rem;
       width: 1rem;
       color: #f0884e; }
+    @media only screen and (max-width: 31em) {
+      .member__down {
+        height: 3rem;
+        width: 3rem; } }
 
 .team {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem; }
+  @media only screen and (max-width: 50em) {
+    .team {
+      justify-content: start;
+      gap: 2rem; } }
   .team__img {
     height: 5rem;
     width: 5rem;
     border-radius: 50%; }
+    @media only screen and (max-width: 31em) {
+      .team__img {
+        height: 6rem;
+        width: 6rem; } }
   .team__name {
     box-sizing: border-box;
     height: 5rem;
@@ -419,6 +474,14 @@ body {
       font-size: 1.5rem;
       color: #f0884e;
       padding-top: 1.5rem; }
+      @media only screen and (max-width: 31em) {
+        .team__name-text {
+          font-size: 2rem;
+          padding-top: 1.8rem; } }
+    @media only screen and (max-width: 31em) {
+      .team__name {
+        height: 6rem;
+        width: 6rem; } }
   .team__add {
     border: 1.5px dashed #fcbda3;
     background-color: rgba(252, 189, 163, 0.3);
@@ -428,7 +491,16 @@ body {
     .team__add-icon {
       height: 1.8rem;
       width: 1.8rem;
-      color: #f0884e; }
+      color: #f0884e;
+      padding-top: 0.2rem; }
+      @media only screen and (max-width: 31em) {
+        .team__add-icon {
+          height: 2rem;
+          width: 2rem; } }
+    @media only screen and (max-width: 31em) {
+      .team__add {
+        height: 4rem;
+        width: 4rem; } }
 
 .progress {
   box-sizing: border-box;

@@ -19,7 +19,7 @@
         gap: 2.5rem;
         margin: 2rem 0;
 
-        @media only screen and(max-width: $bp-small){
+        @media only screen and(max-width: $bp-smallest){
             grid-template-columns: 1fr;
         } 
     }
@@ -29,6 +29,10 @@
         background-color: #fcbda3;
         border-radius: 10px;
         padding: 3rem 2rem;
+
+        @media only screen and(max-width: $bp-smallest){
+            padding: 4rem 3rem;
+        }
     }
 
     &__content1{
@@ -36,6 +40,10 @@
         background-color: #fce5bc;
         border-radius: 10px;
         padding: 3rem 2rem;
+
+        @media only screen and(max-width: $bp-smallest){
+            padding: 4rem 3rem;
+        }
     }
 
     &__user{
@@ -53,6 +61,11 @@
         width: 3rem;
         border-radius: 50%;
         margin-left: -1rem;
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 4rem;
+            width: 4rem;
+        }
     }
     
     &__loader{
@@ -62,6 +75,11 @@
         height: 3rem;
         width: 3rem;
         margin-left: -1rem;
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 4rem;
+            width: 4rem;
+        }
     }
     
     &__number{
@@ -69,6 +87,11 @@
         color: #fff;
         text-align: center;
         padding-top: 0.6rem;
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: 1.6rem;
+            padding-top: 0.8rem;
+        }
     }
 
     &__loader1{
@@ -79,6 +102,11 @@
         width: 3rem;
         margin-left: -1rem;
         z-index: 1;
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 4rem;
+            width: 4rem;
+        }
     }
     
     &__number1{
@@ -86,6 +114,11 @@
         color: #000;
         text-align: center;
         padding-top: 0.6rem;
+
+        @media only screen and(max-width: $bp-smallest){
+            font-size: 1.6rem;
+            padding-top: 0.8rem;
+        }
     }
 
     &__icon{

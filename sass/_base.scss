@@ -3,6 +3,7 @@ $bp-largest: 78em;     // 1250px
 $bp-large: 62.5em;     // 1000px
 $bp-medium: 50em;      // 800px
 $bp-small: 37.5em;     // 600px
+$bp-smallest: 31em;    // 500px
 
 *,
 *::before,
@@ -36,11 +37,12 @@ body{
     }
 
     @media only screen and(max-width: $bp-medium){
-        grid-template-columns: 12rem 1fr;
+        grid-template-columns: 10rem 1fr;
         grid-template-rows: 1fr 1fr;
     }
 
     @media only screen and(max-width: $bp-small){
         display: inline-block;
+        width: 100%;
     }
 }

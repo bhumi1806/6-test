@@ -18,6 +18,11 @@
             color: #fcbda3;
             height: 3rem;
             width: 3rem;
+
+            @media only screen and(max-width: $bp-smallest){
+                height: 4rem;
+                width: 4rem;
+            }
         }
     }
 
@@ -39,6 +44,11 @@
         &:hover,
         &:active{
             background-color: rgba(240,136,78,0.8);
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            padding: 2rem 4rem;
+            font-size: 1.8rem;
         }
     }
 
@@ -65,12 +75,22 @@
             margin-left: 1.4rem;
             margin-top: 0.2rem;
         }
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 3rem;
+            width: 3rem;
+        }
     }
 
     &__img{
         height: 2.5rem;
         width: 2.5rem;
         border-radius: 50%;
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 3rem;
+            width: 3rem;
+        }
     }
 
     &__text{
@@ -96,6 +116,11 @@
             width: 1rem;
             color: #f0884e;
         }
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 3rem;
+            width: 3rem;
+        }
     }
 }
 
@@ -105,10 +130,20 @@
     align-items: center;
     margin-top: 2rem;
 
+    @media only screen and(max-width: $bp-medium){
+        justify-content: start;
+        gap: 2rem;
+    }
+
     &__img{
         height: 5rem;
         width: 5rem;
         border-radius: 50%;
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 6rem;
+            width: 6rem;
+        }
     }
 
     &__name{
@@ -123,6 +158,16 @@
             font-size: 1.5rem;
             color: #f0884e;
             padding-top: 1.5rem;
+
+            @media only screen and(max-width: $bp-smallest){
+                font-size: 2rem;
+                padding-top: 1.8rem;
+            }
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 6rem;
+            width: 6rem;
         }
     }
 
@@ -137,6 +182,17 @@
             height: 1.8rem;
             width: 1.8rem;
             color: #f0884e;
+            padding-top: 0.2rem;
+
+            @media only screen and(max-width: $bp-smallest){
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            height: 4rem;
+            width: 4rem;
         }
     }
 }
