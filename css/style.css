@@ -50,14 +50,19 @@ body {
 .sidebar {
   display: flex;
   justify-content: space-between;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 100vh;
+  border-right: 1px solid #DDBEA8; }
   @media only screen and (max-width: 50em) {
     .sidebar {
       grid-row: 1 / -1; } }
   @media only screen and (max-width: 37.5em) {
     .sidebar {
       display: flex;
-      flex-direction: row; } }
+      flex-direction: row;
+      height: 8rem;
+      border-bottom: 1px solid #DDBEA8;
+      border-right: none; } }
   .sidebar__menu {
     border: none;
     background-color: #fff;
@@ -95,14 +100,16 @@ body {
     width: 4rem;
     background-color: #000;
     border: none;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 1.8rem; }
   .sidebar__help-icon {
     color: #fff;
     height: 2rem;
     width: 2rem; }
 
 .nav {
-  background-color: #DDBEA8; }
+  background-color: #DDBEA8;
+  height: 100vh; }
   @media only screen and (max-width: 62.5em) {
     .nav {
       display: none; } }
@@ -142,7 +149,8 @@ body {
     margin: 1rem 0; }
 
 .project {
-  padding: 3rem; }
+  padding: 3rem;
+  height: 100vh; }
   .project__heading {
     display: flex;
     justify-content: space-between; }
@@ -155,37 +163,71 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 2.5rem;
-    margin: 2rem 0; }
+    margin: 2rem 0 3rem 0; }
     @media only screen and (max-width: 31em) {
       .project__progress {
         grid-template-columns: 1fr; } }
   .project__content {
     box-sizing: border-box;
     background-color: #fcbda3;
-    border-radius: 10px;
-    padding: 3rem 2rem; }
+    height: 30rem;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     @media only screen and (max-width: 31em) {
       .project__content {
         padding: 4rem 3rem; } }
   .project__content1 {
     box-sizing: border-box;
     background-color: #fce5bc;
-    border-radius: 10px;
-    padding: 3rem 2rem; }
+    border-radius: 20px;
+    height: 30rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     @media only screen and (max-width: 31em) {
       .project__content1 {
         padding: 4rem 3rem; } }
   .project__user {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-left: 0.8rem; }
   .project__people {
     display: flex; }
   .project__img {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    margin-left: -1rem; }
+    margin-left: -1rem;
+    z-index: 3;
+    border: 2px solid #fcbda3; }
+    .project__img-1 {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-left: -1rem;
+      z-index: 1;
+      border: 2px solid #fcbda3; }
+    .project__img-2 {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-left: -1rem;
+      z-index: 5;
+      border: 2px solid #fce5bc; }
+    .project__img-3 {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-left: -1rem;
+      z-index: 4;
+      border: 2px solid #fce5bc; }
     @media only screen and (max-width: 31em) {
       .project__img {
         height: 4rem;
@@ -194,9 +236,11 @@ body {
     background-color: #000;
     border: none;
     border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-    margin-left: -1rem; }
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-left: -1rem;
+    z-index: 4;
+    border: 2px solid #fcbda3; }
     @media only screen and (max-width: 31em) {
       .project__loader {
         height: 4rem;
@@ -217,7 +261,7 @@ body {
     height: 3rem;
     width: 3rem;
     margin-left: -1rem;
-    z-index: 1; }
+    z-index: 6; }
     @media only screen and (max-width: 31em) {
       .project__loader1 {
         height: 4rem;
@@ -244,12 +288,15 @@ body {
     color: #000;
     font-size: 1rem;
     font-family: sans-serif;
-    padding-top: 1rem; }
+    padding-top: 2.5rem; }
   .project__sold1 {
     color: #000;
     font-size: 1rem;
     font-family: sans-serif;
-    padding-top: 3.2rem; }
+    padding-top: 5rem; }
+    @media only screen and (max-width: 50em) {
+      .project__sold1 {
+        padding-top: 2rem; } }
   .project__meter {
     height: 0.4rem;
     position: relative;
@@ -357,7 +404,7 @@ body {
 
 .member {
   padding: 2.5rem 3rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6); }
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 50em) {
     .member {
       grid-column: 2 / span 1; } }
@@ -434,8 +481,8 @@ body {
   .member__down {
     border: 1px solid #fcbda3;
     background-color: rgba(252, 189, 163, 0.3);
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 1.8rem;
+    width: 1.8rem;
     border-radius: 50%; }
     .member__down-icon {
       height: 1rem;
@@ -461,8 +508,8 @@ body {
     border-radius: 50%; }
     @media only screen and (max-width: 31em) {
       .team__img {
-        height: 6rem;
-        width: 6rem; } }
+        height: 3.6rem;
+        width: 3.6rem; } }
   .team__name {
     box-sizing: border-box;
     height: 5rem;
@@ -476,12 +523,12 @@ body {
       padding-top: 1.5rem; }
       @media only screen and (max-width: 31em) {
         .team__name-text {
-          font-size: 2rem;
-          padding-top: 1.8rem; } }
+          font-size: 1.5rem;
+          padding-top: 1rem; } }
     @media only screen and (max-width: 31em) {
       .team__name {
-        height: 6rem;
-        width: 6rem; } }
+        height: 3.6rem;
+        width: 3.6rem; } }
   .team__add {
     border: 1.5px dashed #fcbda3;
     background-color: rgba(252, 189, 163, 0.3);
@@ -495,16 +542,17 @@ body {
       padding-top: 0.2rem; }
       @media only screen and (max-width: 31em) {
         .team__add-icon {
-          height: 2rem;
-          width: 2rem; } }
+          height: 1rem;
+          width: 1rem;
+          padding-top: 0; } }
     @media only screen and (max-width: 31em) {
       .team__add {
-        height: 4rem;
-        width: 4rem; } }
+        height: 2rem;
+        width: 2rem; } }
 
 .progress {
   box-sizing: border-box;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 2.5rem 1.8rem;
   margin-top: 3rem; }
@@ -519,7 +567,8 @@ body {
   .progress__header {
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    margin-right: 3rem; }
 
 .task {
   display: grid;
@@ -529,7 +578,7 @@ body {
   margin: 2rem 0; }
   .task__add {
     background-color: #DDBEA8;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 3rem 2rem;
     height: 11rem; }
@@ -557,13 +606,13 @@ body {
     align-items: center; }
   .task__add-1 {
     background-color: #fff;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 1.4rem;
     height: 11rem; }
   .task__add-2 {
     background-color: #f0884e;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 1.4rem;
     height: 11rem; }
