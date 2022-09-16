@@ -117,7 +117,8 @@ body {
   .sidebar__help {
     display: flex;
     align-self: center;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    margin-left: 1rem; }
   .sidebar__help-btn {
     height: 4rem;
     width: 4rem;
@@ -518,7 +519,8 @@ body {
     .member__down-icon {
       height: 1rem;
       width: 1rem;
-      color: #f0884e; }
+      color: #f0884e;
+      padding-bottom: 0.2rem; }
     @media only screen and (max-width: 31em) {
       .member__down {
         height: 3rem;
@@ -575,7 +577,7 @@ body {
         .team__add-icon {
           height: 1rem;
           width: 1rem;
-          padding-top: 0; } }
+          padding-bottom: 0.2rem; } }
     @media only screen and (max-width: 31em) {
       .team__add {
         height: 2rem;
