@@ -20,8 +20,8 @@
             width: 3rem;
 
             @media only screen and(max-width: $bp-smallest){
-                height: 4rem;
-                width: 4rem;
+                height: 2.5rem;
+                width: 2.5rem;
             }
         }
     }
@@ -117,16 +117,17 @@
         border-radius: 50%;
 
         &-icon{
-            height: 1rem;
+            // height: 1rem;
             width: 1rem;
             color: #f0884e;
-            padding-bottom: 0.2rem;
         }
 
         @media only screen and(max-width: $bp-smallest){
-            height: 3rem;
-            width: 3rem;
+            height: 1.6rem;
+            width: 1.6rem;
         }
+
+        
     }
 }
 

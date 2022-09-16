@@ -82,6 +82,11 @@
             margin-left: -1rem;
             z-index: 1;
             border: 2px solid #fcbda3;
+
+            @media only screen and(max-width: $bp-smallest){
+                height: 4rem;
+                width: 4rem;
+            }
         }
 
         &-2{
@@ -91,6 +96,11 @@
             margin-left: -1rem;
             z-index: 5;
             border: 2px solid #fce5bc;
+
+            @media only screen and(max-width: $bp-smallest){
+                height: 4rem;
+                width: 4rem;
+            }
         }
 
         &-3{
@@ -100,6 +110,11 @@
             margin-left: -1rem;
             z-index: 4;
             border: 2px solid #fce5bc;
+
+            @media only screen and(max-width: $bp-smallest){
+                height: 4rem;
+                width: 4rem;
+            }
         }
 
         @media only screen and(max-width: $bp-smallest){
@@ -281,9 +296,9 @@
     padding: 2rem;
 
     &__text{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
 
         @media only screen and(max-width: $bp-smallest){
             display: flex;
@@ -299,7 +314,7 @@
         color: #000;
         border-radius: 100px;
         padding: 1.5rem 2.4rem;
-        margin: 1rem;
+        width: 12rem;
         justify-self: center;
         align-self: center;
         transition: all .2s;
@@ -307,6 +322,10 @@
         &:hover,
         &:active{
             background-color: rgba(252,189,163,0.4);
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            margin-top: 1.4rem;
         }
     }
 
