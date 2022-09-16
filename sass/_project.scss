@@ -1,6 +1,13 @@
 .project{
     padding: 3rem;
-    height: 100vh;
+    // height: 100vh;
+    // overflow-y: scroll;
+    // scrollbar-width: none;
+    // -ms-overflow-style: none;
+
+    // &::-webkit-scrollbar{
+    //     display: none;
+    // }
 
     &__heading{
         display: flex;
@@ -181,7 +188,7 @@
         color: #000;
         font-size: 1rem;
         font-family: sans-serif;
-        padding-top: 2.5rem;
+        // padding-top: 2.5rem;
 
     }
 
@@ -287,6 +294,11 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
+
+        @media only screen and(max-width: $bp-smallest){
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__btn{

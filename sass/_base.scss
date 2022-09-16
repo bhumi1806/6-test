@@ -29,20 +29,34 @@ body{
 
 .container{
     height: 100vh;
-    display: grid;
-    grid-template-columns: 7rem 2fr 4fr 3fr;
-
-    @media only screen and(max-width: $bp-large){
-        grid-template-columns: 7rem 4fr 3fr;
-    }
-
-    @media only screen and(max-width: $bp-medium){
-        grid-template-columns: 10rem 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+    display: flex;
 
     @media only screen and(max-width: $bp-small){
         display: inline-block;
         width: 100%;
+    }
+}
+
+.section-content{
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    @media only screen and(max-width: $bp-large){
+        grid-template-columns: 4fr 3fr;
+    }
+
+    @media only screen and(max-width: $bp-medium){
+        display: inline-block;
+        width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
     }
 }

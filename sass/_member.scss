@@ -1,6 +1,13 @@
 .member{
     padding: 2.5rem 3rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    // overflow-y: scroll;
+    // scrollbar-width: none;
+    // -ms-overflow-style: none;
+    
+    // &::-webkit-scrollbar{
+    //     display: none;
+    // }
 
     @media only screen and(max-width: $bp-medium){
         grid-column: 2 / span 1;
@@ -49,6 +56,11 @@
         @media only screen and(max-width: $bp-smallest){
             padding: 2rem 4rem;
             font-size: 1.8rem;
+        }
+
+        @media only screen and(max-width: $bp-smallest){
+            padding: 1.5rem 2.5rem;
+            font-size: 1.4rem;
         }
     }
 
